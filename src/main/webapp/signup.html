@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css"> <!-- Link to your CSS file -->
+    <title>Sign Up - University Name</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">University Name</a>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#mis">MIS</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="cta" onclick="window.location.href='login.html'">Login</button>
+            <button class="cta">Apply Now</button>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>Sign Up</h2>
+        <form  id="signupForm" >
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="email" id="username" name="username" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your Password" required>
+            </div>
+            <div class="form-group">
+			    <label for="role">Role:</label>
+			    <select id="role" name="role"  aria-label="Choose your role" required>
+			        <option value="" selected="selected" disabled="disabled">Choose a Role</option>
+			        <option value="student">Student</option>
+			        <option value="lecturer">Lecturer</option>
+			        <option value="registrar">Registrar</option>
+			        <option value="hod">Head of Department</option>
+			    </select>
+			</div>
+
+            <button type="submit" class="cta signup-btn">Sign Up</button>
+        </form>
+        <p class="account-prompt">
+		    Already have an account? 
+		    <a href="login.html" class="login-link">Log in here</a> to access your dashboard.
+		</p>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Student Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 University Avenue, City</p>
+                <p>Email: info@university.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 University of Excellence | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="assets/js/signUp.js"></script>
+</body>
+</html>

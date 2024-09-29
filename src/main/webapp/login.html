@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css"> <!-- Link to your CSS file -->
+    <title>Login - University Name</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">University Name</a>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#mis">MIS</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="cta" onclick="window.location.href='signup.html'">Sign Up</button>
+            <button class="cta">Apply Now</button>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="your_login_endpoint_here" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="email" id="username" name="username" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            <button type="submit" class="cta login-btn">Login</button>
+        </form>
+        <div class="login-links">
+		    <p>
+		        <a href="#" class="forgot-password">Forgot your password? Click here to reset it.</a>
+		    </p>
+		    <p>
+		        Don't have an account? 
+		        <a href="signup.html" class="sign-up">Sign Up</a> for a new account.
+		    </p>
+		</div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Student Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 University Avenue, City</p>
+                <p>Email: info@university.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 University of Excellence | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
